@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-body: #ffffff;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidbar-width: 260px;
+  --font-base: "Bai Jamjuree";
+}
+body {
+  background-color: var(--color-base2);
+  font-family: var(--font-base), sans-serif;
+}
+.h-full {
+  min-height: 100vh;
+  height: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.nav-link {
+  color: var(--color-body);
+  transition: all 500ms ease;
+}
+nav .nav-link:hover {
+  color: var(--color-brand);
+}
+img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-base);
+}
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  /* color: #fff; */
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidbar-width);
+    background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3, 63, 71, 0.8)),
+      url(../images/logo.jpg);
+    background-size: cover;
+    position: center;
+  }
+  .navbar-brand img {
+    border: 8px solid var(--color-brand);
+  }
+  section {
+    padding-left: var(--sidbar-width);
+  }
+}
+/* CONTENT */
+/* ****************** */
+/* HOME */
+
+#home .container h1 {
+  color: var(--color-body);
+  font-weight: 700;
+}
+.text-brand {
+  color: var(--color-brand);
+}
+.lead {
+  color: #76a0a0;
+}
+
+.btnWork {
+  padding: 0.75rem 1.75rem;
+  font-weight: 700;
+  transition: 0.5s ease;
+  border-radius: 12px;
+}
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  /* transition: 0.5s ease; */
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-brand2);
+  border-color: var(--color-brand2);
+}
+.custom-link {
+  font-weight: 700;
+  position: relative;
+  transition: 0.5s ease;
+  color: #76a0a0;
+}
+.custom-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-brand);
+  position: absolute;
+  left: 0;
+  top: 120%;
+  transition: 0.5s ease;
+}
+.custom-link:hover {
+  color: var(--color-brand);
+}
+.custom-link:hover::after {
+  width: 100%;
+}
