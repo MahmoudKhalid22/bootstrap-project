@@ -14,7 +14,7 @@
     <link rel="icon" href="./logo2.jpg" />
     <title>Mahmoud Khalid</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container flex-lg-column">
         <a class="navbar-brand mx-lg-auto" href="#">
@@ -78,24 +78,79 @@
     <section id="home" class="h-full bg-dark d-flex align-items-center">
       <div class="container">
         <div class="row ps-lg-5">
-          <div class="col-lg-8">
-            <h1 class="display-4">
+          <div class="col-lg-10">
+            <h1 class="display-4" data-aos="fade-up">
               I'm A <span class="text-brand">Frontend Developer</span> From
               Egypt
             </h1>
-            <p class="lead mt-2 mb-4">
+            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
               Hi, I'm Mahmoud Khalid, passionate about creating and developing
               web interfaces. I have experience in this area of work , with
               multiple quality projects.
             </p>
-            <a href="#work" class="btnWork btn-brand me-4">Explore My Work</a>
-            <a href="#" class="custom-link">Call: (+201229086941)</a>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <a href="#work" class="btnWork btn-brand me-4">Explore My Work</a>
+              <a href="#" class="custom-link">Call: (+201229086941)</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="services" id="services"></section>
+    <!-- SERVICES -->
+    <section class="services h-full d-flex align-items-center" id="services">
+      <div class="container px-lg-5">
+        <div class="row pb-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <h6 class="text-uppercase text-brand">Services</h6>
+            <h1 class="text-light">Services that I provide</h1>
+          </div>
+        </div>
+        <div class="row gap-3 gap-md-0">
+          <!-- 01 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service_box bg-base p-4 rounded-4 shadow-effect">
+              <div class="icon_box mb-4">
+                <i class="las la-code py-3 px-4 rounded-4 fs-2 bg-brand"></i>
+              </div>
+              <h3 class="text-light mb-2">Website Development</h3>
+              <p class="lead">
+                I focus on creating high-quality, responsive and interactive
+                websites
+              </p>
+              <a href="" class="custom-link">Read More</a>
+            </div>
+          </div>
+          <!-- 02 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="service_box bg-base p-4 rounded-4 shadow-effect">
+              <div class="icon_box mb-4">
+                <i class="las la-code py-3 px-4 rounded-4 fs-2 bg-brand"></i>
+              </div>
+              <h3 class="text-light mb-2">Custom Solutions</h3>
+              <p class="lead">
+                I use modern techniques to ensure that your website is fast,
+                secure, and easy on all devices.
+              </p>
+              <a href="" class="custom-link">Read More</a>
+            </div>
+          </div>
+          <!-- 03 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="service_box bg-base p-4 rounded-4 shadow-effect">
+              <div class="icon_box mb-4">
+                <i class="las la-code py-3 px-4 rounded-4 fs-2 bg-brand"></i>
+              </div>
+              <h3 class="text-light mb-2">Maintenance and Support</h3>
+              <p class="lead">
+                I'll provide maintenance and support to keep it running
+                smoothly.
+              </p>
+              <a href="" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./asstes/js/bootstrap.bundle.min.js"></script>
     <script src="./asstes/js/aos.js"></script>
