@@ -323,3 +323,18 @@ footer .social-links a:hover {
 .p-page {
   margin-top: 3rem;
 }
+.project-card,
+.card-custom {
+  height: 24rem;
+}
+.project-card img,
+.card-custom img {
+  height: 17rem;
+  object-fit: cover;
+}
+/* .cardContainer {
+  gap: 2rem;
+} */
+.home-page-btn {
+  margin-top: 3rem;
+}
